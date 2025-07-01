@@ -1,0 +1,141 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  #0a192f;
+    padding-top: 80px;
+}
+.ms-auto {
+    margin-left: auto !important;
+}
+.mb-2 {
+    margin-bottom: .5rem !important;
+}
+
+a{
+    margin-left: 7px;
+}
+li{
+    margin-left: 10px;
+}
+  body {
+    overflow-x: hidden;
+    background-color:#0a192f;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .image-1 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .aboutus {
+    background-color: #0a192f;
+    height: 90vh;
+    width: 100%;
+    background-image: 
+       
+        url(../imgs/ABOUT.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+
+  .bout {
+      background-color: #0a192f;
+  }
+  .image-1{
+    width: 120%;
+  }
+  .bout-item {
+      background-color: #16263e;
+      border-radius: 20px;
+      margin-top: 80px;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      color: #ffffff;
+    
+ 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: none;
+  }
+  
+  .bout-item:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      background-color: #1e2a3a;
+  }
+  
+  .bout-title {
+      font-size: 20px;
+  }
+  
+  .bout-text h3 {
+      font-size: 13px;
+      margin: 0;
+      color: #b0b0b0;
+  }
+  
+  .icon-circle {
+      width: 25px;
+      height: 25px;
+      
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+ background-color: #16263e;
+      font-size: 14px;
+      flex-shrink: 0;
+      margin-top: 3px;
+  }
+  
+  .mission-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 15px;
+        }
+
+        h1 {
+           color: #ffffff;
+            margin-bottom: 1.5rem;
+        }
+
+        .intro-text {
+            color: #ffffff;
+            margin-bottom: 3rem;
+        }
+
+        .stat-item { 
+            background-color: #16263e;
+            padding: 2rem;
+            border-radius: 8px;
+            height: 100%;
+        }
+
+        .stat-number {
+            color:  #57b269;
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+         p{
+            color: #ffffff;
+        }
+.footer{
+background-color: #071a30;
+ color: #fff;
+}

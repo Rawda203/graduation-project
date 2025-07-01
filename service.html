@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/service.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg shadow-lg fixed-top" style="padding: 20px; background-color: #0a192f;">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-uppercase text-success me-auto" href="#">CipherSpire</a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav text-center" style="font-size: 13px;">
+          <li class="nav-item">
+            <a class="nav-link active px-3 py-2 rounded fw-semibold text-light" href="home.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 py-2 rounded fw-semibold text-light" href="about us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 py-2 rounded fw-semibold text-light" href="service.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 py-2 rounded fw-semibold text-light" href="bolg.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<section class="hero d-flex align-items-center  ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-up">
+        <h1 class="hero-title animate__animated animate__fadeInLeft">
+          SAFEGUARD YOUR <br> DIGITAL WORLD
+        </h1>
+        <p class="hero-subtitle animate__animated animate__fadeInLeft animate__delay-1s">
+          Protect your business with advanced security solutions, real-time threat detection, and powerful encryption to ensure complete data safety, privacy, 
+          and seamless operations against evolving cyber threats.
+        </p>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+        <div class="images  animate__animated animate__fadeInUp animate__delay-2s" >
+          <div class="image-1">
+            <img src="imgs/Layer 8.png" alt="AI Security" class="img-fluid" data-aos="fade-up" data-aos-duration="1000">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+  <section class="Blog  animate__animated animate__fadeInLeft animate__delay-1s" style="padding-bottom: 200px;">
+  <div id="cardCarousel" class="carousel slide py-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active"  id="password-card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front text-center">
+              <div class="layer-1 mb-3"><i class="fa-solid fa-lock" style="font-size: 30px; color: #57b269;"></i></div>
+              <h5 class="mb-3">PASSWORD LEAK CHECK</h5>
+              <input id="passwordInput" type="password" class="form-control mb-3" placeholder="Enter password">
+              <button onclick="addResult(event,this, 'password')" class="btn btn-success mb-2">Add Password</button>
+              <button onclick="flipToLearn(this)" class="btn btn-outline-light btn-sm" style="margin-top: -9px;">Learn More</button>
+            </div>
+            <div class="flip-card-back text-center">
+              <div id="passwordResult" class="result-list mb-3"></div>
+              <button class="btn btn-outline-light btn-sm" onclick="flipToFront(this)">Back</button>
+            </div>
+            <div class="flip-card-learn text-start">
+              <strong style="color: #57b269; font-size: 22px;">PASSWORD LEAK CHECK:</strong><br>  
+              Instantly check if your password has been compromised in any data breaches or leaked on the dark web.  
+              <p>Passwords are one of the most common entry points for hackers, and if yours has been exposed, it could lead to identity theft, unauthorized access, and even financial loss. This tool checks if your password appears in any known breach databases. If your password has been compromised, you'll receive a detailed report on how many times it was leaked and which services were affected, allowing you to take immediate action to secure your accounts and change vulnerable passwords. Stay ahead of potential threats by using our service to keep your passwords secure.</p>
+              <p>We utilize state-of-the-art breach detection algorithms that scan numerous sources on the dark web and other databases, ensuring you get the most comprehensive check. This feature is essential for individuals and businesses looking to avoid any security breaches due to reused or compromised passwords.</p>
+                <button class="btn btn-outline-light btn-sm" onclick="flipToFront(this)"style="margin-top:10px;">Back</button>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item action" id="url-card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front text-center">
+              <div class="layer-1 mb-3"><i class="fa-solid fa-link" style="font-size: 30px; color: #57b269;"></i></div>
+              <h5 class="card-title mb-3">URL SCANNER</h5>
+              <input id="urlInput" type="text" class="form-control mb-3" placeholder="Enter URL">
+              <button onclick="addResult( event, this, 'url')" class="btn btn-success mb-2">Add URL</button>
+              <button onclick="flipToLearn(this)" class="btn btn-outline-light btn-sm" style="margin-top: -9px;">Learn More</button>
+            </div>
+            <div class="flip-card-back text-center">
+              <div id="urlResult" class="result-list mb-3"></div>
+              <button class="btn btn-outline-light btn-sm" onclick="flipToFront(this)">Back</button>
+            </div>
+            <div class="flip-card-learn text-start">
+              <strong style="color: #57b269; font-size: 22px;">URL SCANNER:</strong>  <br>
+              Paste any link and scan it in real-time to uncover phishing attempts, malicious code, or hidden threats.  
+              <p>Phishing is a leading cause of data breaches, with attackers often tricking users into clicking on fraudulent links. Our URL Scanner thoroughly inspects any link you input, instantly analyzing whether it leads to malicious sites, attempts to steal personal information, or contains harmful malware. By using this tool, you can verify the safety of any website or URL before clicking, ensuring that you avoid phishing scams and prevent potential harm to your device or data.</p>
+              <p>With the rise of social engineering attacks and sophisticated malware campaigns, having a trusted tool to scan links is critical for both personal and organizational cybersecurity. Whether you are browsing emails, social media, or checking a link in a message, our URL scanner gives you peace of mind by verifying the safety of the link in seconds.</p>
+              <button class="btn btn-outline-light btn-sm" onclick="flipToFront(this)" style="margin-top:10px;">Back</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="carousel-item action"  id="tor-card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front text-center">
+              <div class="layer-1 mb-3"><i class="fa-solid fa-magnifying-glass" style="font-size: 30px; color: #57b269;"></i></div>
+              <h5 class="card-title mb-3">TOR SEARCH</h5>
+              <input id="torInput" type="text" class="form-control mb-3" placeholder="Search TOR">
+              <button onclick="addResult( event,this, 'tor' )" class="btn btn-success mb-2">Add Search</button>
+              <button onclick="flipToLearn(this)" class="btn btn-outline-light btn-sm" style="margin-top: -9px;">Learn More</button>
+            </div>
+            <div class="flip-card-back text-center">
+              <div id="torResult" class="result-list mb-3"></div>
+              <button class="btn btn-outline-light btn-sm" onclick="flipToFront(this)">Back</button>
+            </div>
+            <div class="flip-card-learn text-start">
+              <strong style="color: #57b269; font-size: 22px;">TOR SEARCH:</strong>  <br>
+              Privately explore content from the dark web using our secure TOR gateway—no setup required.  
+              <p>The dark web is a hidden part of the internet, often used for illicit activities. While navigating it requires care, researchers and journalists sometimes need access to explore and gather information. Our TOR Search allows you to browse the dark web securely and anonymously, providing access to otherwise restricted content without exposing your identity or personal details. You don't need any technical knowledge to start using the TOR network, and your privacy is fully protected while using our platform.</p>
+              <p>This tool is perfect for individuals who need to conduct deep research or investigate potential threats on the dark web without the risk of revealing their identity. We ensure that you remain anonymous, safe, and protected while you search for information, making it easy to tap into the hidden parts of the internet safely.</p>
+              <button class="btn btn-outline-light btn-sm" onclick="flipToFront(this)" style="margin-top:10px;">Back</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item action" id="threat-card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front text-center">
+              <div class="layer-1 mb-3"><i class="fa-solid fa-bolt" style="font-size: 30px; color: #57b269;"></i></div>
+              <h5 class="card-title mb-3">THREAT INTELLIGENCE</h5>
+              <input id="threatInput" type="text" class="form-control mb-3" placeholder="Threat Analysis">
+              <button onclick="addResult(event, this, 'threat' )" class="btn btn-success mb-2">Add Threat</button>
+              <button onclick="flipToLearn(this)" class="btn btn-outline-light btn-sm" style="margin-top: -9px;">Learn More</button>
+            </div>
+            <div class="flip-card-back text-center">
+              <div id="threatResult" class="result-list mb-3"></div>
+              <button class="btn btn-outline-light btn-sm" onclick="flipToFront(this)">Back</button>
+            </div>
+            <div class="flip-card-learn text-start">
+              <strong style="color: #57b269; font-size: 22px;">THREAT INTELLIGENCE:</strong>  <br>
+              Conduct deep, AI-powered analysis of IP addresses, domains, and file hashes.  
+              <p>Staying ahead of cyber threats requires real-time intelligence and analysis. Our Threat Intelligence tool goes beyond surface-level scans, using artificial intelligence to assess IP addresses, domains, and file hashes associated with cyber attacks. It detects patterns and identifies malicious activity early, allowing businesses to proactively defend against potential security breaches. Whether you're investigating suspicious activity or monitoring for threats, this tool helps you stay informed and prepared to tackle emerging cybersecurity risks before they escalate.</p>
+              <p>Cyber threats evolve rapidly, and our Threat Intelligence service allows you to monitor and respond to these threats in real-time. By analyzing massive datasets, our AI models can detect even the most subtle signs of malicious activity, helping you prevent attacks before they happen. This tool is invaluable for IT teams, cybersecurity experts, and anyone who needs to monitor the safety of their network and digital infrastructure continuously.</p>
+              <button class="btn btn-outline-light btn-sm" onclick="flipToFront(this)" style="margin-top:10px;">Back</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+      <i class="fa-solid fa-chevron-left" style="color: #57b269; font-size: 40px;"></i>
+    </button>
+    
+    <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+      <i class="fa-solid fa-chevron-right" style="color: #57b269; font-size: 40px;"></i>
+    </button>
+   <div id="resultsOutput" class="container mt-5 d-none d-flex align-items-center justify-content-center">
+  <div class="card text-light p-4 shadow border border-success" style="background-color: #0a192f; width: 90%; max-width: 800px;">
+    <h4 id="resultHeader" class="mb-3" style="color: #57b269;">Result</h4>
+    <div id="resultBody" class="fs-6 text-light"></div>
+  </div>
+</div>
+
+  </div>
+  </section>
+  
+  
+<section class="Blog "data-aos="fade-up" data-aos-duration="1000">
+  <div class="container"> 
+     <h1 class="title-blog">PROTECTION FOR <br>DIGITAL SECURITY</h1>
+     <p class="text-blog">Stay secure with cutting-edge protection solutions</p>
+     
+     <div class="row mb-5">
+         
+     </div>
+     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card h-150">
+            
+            <div class="card-body "   data-aos="fade-right" 
+               data-aos-delay="100" 
+               data-aos-duration="1000"style="border-radius: 15PX ;">
+              <div class="layer-2"><i class="fa-solid fa-shield"></i></div>
+              <h5 class="card-title" style="font-size: 22px;">Threat Detection</h5>
+              <p class="card-text" style="color: #e4dfdf; font-size: 14px;">Safeguards data from sophisticated <br> and harmful cyber threats.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+           <div class="card h-150">
+           
+             <div class="card-body"  data-aos="fade-right" 
+               data-aos-delay="300" 
+               data-aos-duration="1000"style="border-radius: 15PX;">
+              <div class="layer-2" ><i class="fa-solid fa-database"></i></div>
+               <h5 class="card-title"  style="font-size: 22px;" >Data Encryption</h5>
+               <p class="card-text" style="color: #e4dfdf; font-size: 14px;" >Secure sensitive data with advanced <br> 
+                encryption good secure</p>
+             </div>
+           </div>
+        </div>
+
+        <div class="col">
+           <div class="card h-150">
+             
+             <div class="card-body"   data-aos="fade-right" 
+               data-aos-delay="500" 
+               data-aos-duration="1000"style="border-radius: 15PX;">
+              <div class="layer-2" ><i class="fa-solid fa-headphones" ></i></div>
+               <h5 class="card-title"style="font-size: 22px;">24/7 monitoring</h5>
+               <p class="card-text"style="color: #e4dfdf; font-size: 14px;">
+              Continuous surveillance for ultimate <br>protection your business </p>
+             </div>
+           </div>
+        </div>   
+
+        <div class="col">
+          <div class="card h-150">
+          
+            <div class="card-body"   data-aos="fade-right" 
+               data-aos-delay="700" 
+               data-aos-duration="1000"style="border-radius: 15PX;">
+              <div class="layer-2"  ><i class="fa-solid fa-globe"></i></div>
+              <h5 class="card-title"style="font-size: 22px;">Network Security</h5>
+              <p class="card-text"style="color: #e4dfdf; font-size: 14px;" > 
+                 Protect your infrestructure from <br>cyber attacks shield</p>
+            </div>
+          </div>
+        </div>
+     </div>
+  </div> 
+</section>
+<section class="modern" style="background-color: #0a192f; padding: 50px 0;">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      
+      <div class="col-md-6" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+        <h1 style="color: white; font-size: 42px; font-weight: bold; line-height: 1.4;">
+          ADVANCED SECURITY <br> SOLUTIONS FOR YOUR BUSINESS
+        </h1>
+      </div>
+
+    
+      <div class="col-md-6 text-md-end text-start" data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000">
+        <p style="color: #b0b0b0; font-size: 16px; margin-top: 20px;">
+          Securo provides cutting-edge cybersecurity solutions to protect businesses <br>
+          from digital threats, data safety, privacy, and seamless operations.
+        </p>
+        <a href="about us.html" class="btn btn-secondary custom-btn mt-3">
+          MORE ABOUT US
+        </a>
+      </div>
+    </div>
+
+
+    <div class="img-modern text-center mt-5"  data-aos="zoom-in" data-aos-duration="1200">
+      <img src="imgs/Service.png" alt="Cybersecurity illustration" class="img-fluid" >
+    </div>
+
+  </div>
+</section>
+
+<section class="security-services " style="padding-top: 200px;">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card custom-card">
+            <div class="card-body d-flex flex-column justify-content-between h-100">
+              <div class="number-line mb-2">| 01.</div>
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="text-content text-start">
+                  <h3 class="card-title">Network Security</h3>
+                  <p class="card-text">Protects your business from cyber threats by securing networks, traffic unauthorized access.</p>
+                </div>
+                <div class="square-icon ms-3"><img src="imgs/Network Security.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card custom-card">
+            <div class="card-body d-flex flex-column justify-content-between h-100">
+              <div class="number-line mb-2">| 02.</div>
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="text-content text-start">
+                  <h3 class="card-title">Cloud Security</h3>
+                  <p class="card-text">Ensures safe cloud operations by implementing encryption, access monitoring for your data.</p>
+                </div>
+                <div class="square-icon ms-3"><img src="imgs/Cloud Security.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card custom-card">
+            <div class="card-body d-flex flex-column justify-content-between h-100">
+              <div class="number-line mb-2">| 03.</div>
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="text-content text-start">
+                  <h3 class="card-title">Endpoint Protection</h3>
+                  <p class="card-text">Shields devices from malware, ransomware, and phishing attacks with advanced security protocols.</p>
+                </div>
+                <div class="square-icon ms-3"><img src="imgs/Endpoint Protection.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card custom-card">
+            <div class="card-body d-flex flex-column justify-content-between h-100">
+              <div class="number-line mb-2">| 04.</div>
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="text-content text-start">
+                  <h3 class="card-title">Penetration Testing</h3>
+                  <p class="card-text">Identifies vulnerabilities by simulating cyberattacks, allowing businesses to strengthen their security defenses.</p>
+                </div>
+                <div class="square-icon ms-3"><img src="imgs/Penetration Testing.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card custom-card">
+            <div class="card-body d-flex flex-column justify-content-between h-100">
+              <div class="number-line mb-2">| 05.</div>
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="text-content text-start">
+                  <h3 class="card-title">Incident Response</h3>
+                  <p class="card-text">Rapidly detects, contains, and mitigates security breaches, damage and preventing future cyber threats.</p>
+                </div>
+                <div class="square-icon ms-3"><img src="imgs/Incident Response.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card custom-card">
+            <div class="card-body d-flex flex-column justify-content-between h-100">
+              <div class="number-line mb-2">| 06.</div>
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="text-content text-start">
+                  <h3 class="card-title">Compliance Management</h3>
+                  <p class="card-text">Helps businesses meet industry regulations by implementing security continuous monitoring.</p>
+                </div>
+                <div class="square-icon ms-3"><img src="imgs/Compliance Management.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+<section class="hero d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                
+                <h1 class="hero-title" style="margin-top: 40px; font-size: 45PX;">
+                  WHY CHOOSE SECURO <br> FOR CYBERSECURITY
+                </h1>
+                <p class="hero-subtitle" style="margin-top: 50px;">
+                  We provide cutting-edge cybersecurity solutions, proactive threat detection, and expert support to safeguard evolving cyber threats.
+                </p>
+                
+            </div>
+
+         
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="images text-center">
+                  
+                    <div class="image-2">
+                       <img src="imgs/مشروع التخرج (1).png" alt="" srcset=""class="img-fluid" data-aos="fade-up" data-aos-duration="1000">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="feature">
+  <div class="container py-5">
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="feature-box d-flex align-items-start" data-aos="fade-up">
+          <div class="icon-circle">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="ms-3">
+            <h3>Advanced Technology</h3>
+            <p>Utilizing the latest security innovations to protect your systems, data, and network.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="feature-box d-flex align-items-start" data-aos="fade-up">
+          <div class="icon-circle">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="ms-3">
+            <h3>Proactive Defense</h3>
+            <p>Implementing intelligent threat detection and risk assessment to prevent cyberattacks.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="feature-box d-flex align-items-start"data-aos="fade-up">
+          <div class="icon-circle">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="ms-3">
+            <h3>Expert Team</h3>
+            <p>Certified cybersecurity professionals with years of experience delivering strategic solutions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="feature-box d-flex align-items-start" data-aos="fade-up">
+          <div class="icon-circle">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="ms-3">
+            <h3>Custom Solutions</h3>
+            <p>Tailored security strategies designed to fit your business needs and adapt to evolving threats.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="feature-box d-flex align-items-start" data-aos="fade-up">
+          <div class="icon-circle">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="ms-3">
+            <h3>Compliance Ready</h3>
+            <p>Helping you meet industry regulations, security frameworks, and compliance standards.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="feature-box d-flex align-items-start"data-aos="fade-up">
+          <div class="icon-circle">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="ms-3">
+            <h3>Good Services</h3>
+            <p>Tailored security strategies providing scalable and flexible protection against threats.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="footer py-5  text-white"  data-aos="fade-up">
+    <div class="container">
+        <div class="row">
+          
+            <div class="col-md-6">
+                <h4 class="fw-bold text-uppercase animate__animated animate__fadeInLeft" style="font-size: 40px; ">Get the Latest <br> Updates</h4>
+                
+                <div class="input-group">
+                  <div class="input-group animate__animated animate__fadeInLeft animate__delay-1s">
+                    <input type="email" 
+                           class="form-control custom-input" 
+                           placeholder="Write Your Email Here..." 
+                           aria-label="Email">
+                    <button class="btn custom-button" type="button">
+                      <i class="fa-solid fa-arrow-right" ></i>
+                    </button>
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <div class="col-md-6 text-md-end mt-4 mt-md-0 animate__animated animate__fadeInLeft animate__delay-3s">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+                    <li class="list-inline-item"><a href="about us.html" class="text-white text-decoration-none">About Us</a></li>
+                    <li class="list-inline-item"><a href="service.html" class="text-white text-decoration-none">Services</a></li>
+                    <li class="list-inline-item"><a href="bolg.html" class="text-white text-decoration-none">Blog</a></li>
+                </ul>
+           
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6 animate__animated animate__fadeInLeft animate__delay-2s">
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white fs-4"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-white fs-4"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-white fs-4"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-white fs-4"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-md-end mt-3 mt-md-0 animate__animated animate__fadeInLeft animate__delay-4s">
+                <a href="#" class="btn btn-outline-light" style="margin-top: -100px;">Back to Top <i class="fa-solid fa-arrow-up-long fa-bounce"style="font-size: 20px;  color: #3e914f;"></i></a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col text-center">
+                <p class="mb-0">&copy; 2025 All Rights Reserved by Securo.</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="js/service.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
